@@ -51,29 +51,31 @@ body{
     bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
+
     background-color: black;
     color: white;
     padding: 15px 25px;
     border-radius: 12px;
     width: 300px;
     text-align: center;
+
     visibility: hidden;
     transition: 0.3s;
 }
 
-
+/* Arrow */
 .message-box::after{
     content: "";
     position: absolute;
+
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
+
     border-width: 10px;
     border-style: solid;
     border-color: black transparent transparent transparent;
-    opacity: 0;
 }
-
 
 .nav-item:hover .message-box{
     visibility: visible;
